@@ -1,0 +1,76 @@
+body {
+    background: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1, h2, h3, p {
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    margin-top: 50px;
+}
+#opcoes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px 0 20px;
+}
+.background-escolha, .background-opcoes {
+    width: 147px;
+    height: 125px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+}
+#escolha-computador, #escolha-jogador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.background-opcoes:hover {
+    border: 2px solid red;
+    padding: 8px;
+}
+
+#escolhas {
+    text-align: center;
+}
+#pontuacao-jogadores {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    #opcoes {
+        justify-content: center;
+    }
+    .background-opcoes, .background-escolha {
+        margin: 0 30px;
+    }
+        #escolhas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #escolha-jogador, #escolha-computador {
+        margin: 0 30px 30px 
+    }
+    #vs {
+        font-size: 2rem;
+    }
+    #pontuacao-jogadores {
+        display: flex;
+        justify-content: center;
+    }
+    #pontuacao-jogadores p{
+        margin-left: 30px;
+    } 
+}
+
